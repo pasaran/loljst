@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LolJST example</title>
+    <script type="text/javascript" src="loljst.js"></script>
+    <script type="text/javascript" src="example.templates.js"></script>
+    <script type="text/javascript" src="example.data.js"></script>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script>
+var result = [];
+loljst.apply(data, result);
+
+document.getElementById('result').innerHTML = result.join('');
+</script>
+
+</body>
+</html>
+
